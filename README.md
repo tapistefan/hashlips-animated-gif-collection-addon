@@ -8,10 +8,11 @@ I didn't want to "reinvent the wheel" and code separate generator from scratch w
 For example if you have traits "Background", "Weapon", "Body" and you want to make animated "Background" you will have to put our transparent .png (Trait#Rarity.png) inside "Background" folder and rename it with your trait name and rarity weight so you get proper JSON metadata from [hashlips_art_engine](https://github.com/HashLips/hashlips_art_engine). You must do this for every "Background" trait so you will have a "Background" folder with multiple transparent PNGs named as your traits with proper rarity weights.
 2. Install ffmpeg into your system. Plenty of straight forward tutorials already available. Just google: "install ffmpeg on windows" if you are on windows or "install ffmpeg on linux" if you are using linux.
 3. Download this repository
-4. Copy "images" and "json" folders that you got from [hashlips_art_engine](https://github.com/HashLips/hashlips_art_engine) (hashlips_art_engine/build) to "assets" folder from this repository. You will now have an "assets" folder with "images" and "json" folders inside.
-5. Delete the "\_metadata.json" file from the "json" folder otherwise you will get an error.
-6. Put animated GIFs that you want transparent traits from the "step 1" to be replaced with inside folder "replaceWith". Files must be called same as original traits just without rarity weights (Sames as they are named in JSON metadata).
-7. Open "config.js" file and change "trait" from "Background" to the name of the trait you are replacing from JSON that [hashlips_art_engine](https://github.com/HashLips/hashlips_art_engine) generated.<br />
+4. Create "assets", "replaceWith" and "updatedAssets" folders in the root of the downloaded repository (**Case sensitive**).
+5. Copy "images" and "json" folders that you got from [hashlips_art_engine](https://github.com/HashLips/hashlips_art_engine) (hashlips_art_engine/build) to "assets" folder that you created. You will now have an "assets" folder with "images" and "json" folders inside.
+6. Delete the "\_metadata.json" file from the "json" folder otherwise you will get an error.
+7. Put animated GIFs that you want transparent traits from the "step 1" to be replaced with inside folder "replaceWith". Files must be called same as original traits just without rarity weights (Sames as they are named in JSON metadata).
+8. Open "config.js" file and change "trait" from "Background" to the name of the trait you are replacing from JSON that [hashlips_art_engine](https://github.com/HashLips/hashlips_art_engine) generated.<br />
 change "background" to false if you want to put animated .gif in front of everything.<br />
 "resolutionWidth" and "resolutionHeight" must match resolution from [hashlips_art_engine](https://github.com/HashLips/hashlips_art_engine) config file.
 7. Run `node app.js` and wait for it to finish.
