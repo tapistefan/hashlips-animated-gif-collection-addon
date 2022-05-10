@@ -1,9 +1,9 @@
-# Description
+# Generate Animated GIF NFT Collection
 This repository helps you generate animated gif NFT collections using hashlips art engine. It is used to replace static traits of an already generated collection with animated gif traits. This way you can mix .png traits with .gif traits.
-
+## Description
 I didn't want to "reinvent the wheel" and code separate generator from scratch when [@HashLips](https://github.com/HashLips) already did an amazing job with his [hashlips_art_engine](https://github.com/HashLips/hashlips_art_engine). There are already a bunch of tutorials on youtube on how to use it and almost the whole crypto community already uses it. So I just made an "addon" that will help you generate your NFT collection using [hashlips_art_engine](https://github.com/HashLips/hashlips_art_engine) but add animated .gif traits to it. This is not possible without addon because [hashlips_art_engine](https://github.com/HashLips/hashlips_art_engine) cant mix .png with .gif.
 
-# Tutorial
+## Tutorial
 1. Generate your collection with [hashlips_art_engine](https://github.com/HashLips/hashlips_art_engine) but use transparent .png file available in this repository (Trait#Rarity.png) on traits that you want to change with animated .gif ones.<br />
 For example if you have traits "Background", "Weapon", "Body" and you want to make animated "Background" you will have to put our transparent .png (Trait#Rarity.png) inside "Background" folder and rename it with your trait name and rarity weight so you get proper JSON metadata from [hashlips_art_engine](https://github.com/HashLips/hashlips_art_engine). You must do this for every "Background" trait so you will have a "Background" folder with multiple transparent PNGs named as your traits with proper rarity weights.
 2. Install ffmpeg into your system. Plenty of straight forward tutorials already available. Just google: "install ffmpeg on windows" if you are on windows or "install ffmpeg on linux" if you are using linux.
