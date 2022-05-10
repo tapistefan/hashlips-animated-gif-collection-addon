@@ -13,7 +13,7 @@ For example if you have traits "Background", "Weapon", "Body" and you want to ma
 6. Delete the "\_metadata.json" file from the "json" folder otherwise you will get an error.
 7. Put animated GIFs that you want transparent traits from the "step 1" to be replaced with inside folder "replaceWith". Files must be called same as original traits just without rarity weights (Sames as they are named in JSON metadata).
 8. Open "config.js" file and change "trait" from "Background" to the name of the trait you are replacing from JSON that [hashlips_art_engine](https://github.com/HashLips/hashlips_art_engine) generated.<br />
-change "background" to false if you want to put animated .gif in front of everything.<br />
+Change "background" to false if you want to put animated .gif in front of everything.<br />
 "resolutionWidth" and "resolutionHeight" must match resolution from [hashlips_art_engine](https://github.com/HashLips/hashlips_art_engine) config file.
 7. Run `node app.js` and wait for it to finish.
 8. You can find new animated collection inside the "updatedAssets" folder with updated JSONs ready for metaplex.
